@@ -51,8 +51,5 @@ class Song
     Artist.find_or_create_by_name(file[0])
     Song.find_by_name(file[1]) || Song.new(file[1])
     Genre.find_or_create_by_name(file[2])
-    binding.pry
   end
 end
-
-Song.new_from_filename("Thundercat - For Love I Come - dance.mp3")
