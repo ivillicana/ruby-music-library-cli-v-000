@@ -20,7 +20,7 @@ class MusicLibraryController
   end
 
   def list_songs
-    @importer.files
-    Song.all.collect {|x| x.name}.sort.each {|f| puts f}
+    count = 1
+    Song.all.sort_by {|x| x.name}.each {|f| puts "1. #{f.artist.name} - #{f.name} - #{f.genre.name}.mp3"}
   end
 end
