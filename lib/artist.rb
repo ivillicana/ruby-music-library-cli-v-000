@@ -17,10 +17,10 @@ class Artist
 
   def self.create(name)
     artist = Artist.new(name)
-    artist.save
+    @@all << artist
   end
 
   def save
-    Artist.all.push(self)
+    Artist.all << self
   end
 end
