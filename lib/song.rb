@@ -51,7 +51,7 @@ class Song
     song = Song.new(file[1])
     song.artist = Artist.find_or_create_by_name(file[0])
     song.genre = Genre.find_or_create_by_name(file[2])
-    binding.pry
+
   end
 end
 
