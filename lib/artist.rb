@@ -18,7 +18,7 @@ class Artist
 
   def self.create(name)
     artist = Artist.new(name).tap {|x| x.save}
-    artist.save
+    artist
   end
 
   def save
