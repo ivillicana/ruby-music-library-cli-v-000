@@ -19,6 +19,6 @@ class MusicLibraryController
   end
 
   def list_songs
-    Song.all.sort.each {|x| puts x.name}
+    Song.all.collect {|x| x.name}.sort.each {|f| puts f}
   end
 end
