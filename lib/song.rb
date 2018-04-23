@@ -50,7 +50,7 @@ class Song
     file = filename.split(" - ")
     song = Song.new(file[1])
     song.artist = Artist.find_by_name(file[0]) || file[0]
-    song.genre = Genre.find_or_create_by_name(file[2])
+    song.genre = Genre.find_by_name(file[2]) || file[2]
 
   end
 end
