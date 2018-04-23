@@ -8,6 +8,10 @@ class Song
   end
 
   def self.all
-    @@all 
+    @@all
+  end
+
+  def self.destroy_all
+    @@all.clear
   end
 end
