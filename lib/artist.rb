@@ -16,7 +16,7 @@ class Artist
   end
 
   def self.create(name)
-    artist = Artist.new(name)
+    artist = [Artist.new(name)]
     @@all << artist
   end
 
