@@ -51,8 +51,9 @@ class Song
     Song.new(file[1], Artist.find_or_create_by_name(file[0]), Genre.find_or_create_by_name(file[2].gsub(".mp3", "")))
   end
 
-  def self.create_from_filename(filenae)
-
+  def self.create_from_filename(filename)
+    song = self.new_from_filename(filename)
+    song.save
   end
 end
 
