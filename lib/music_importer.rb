@@ -6,6 +6,6 @@ class MusicImporter
   end
 
   def files
-    
+    Dir.glob("#{@path}/*").select {|x| File.file? x}
   end
 end
