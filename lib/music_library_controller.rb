@@ -42,4 +42,14 @@ class MusicLibraryController
       count += 1
     end
   end
+
+  def list_songs_by_artist
+    puts "Please enter the name of an artist:"
+    input = gets.strip
+    count = 1
+    Song.all.select {|s| s.name == input}sort_by {|x| x.name}.each do |f|
+      puts "#{count}. #{f.artist.name} - #{f.name} - #{f.genre.name}"
+      count += 1
+    end
+  end
 end
