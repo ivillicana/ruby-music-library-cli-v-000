@@ -21,7 +21,7 @@ class Song
 
   def self.create(name)
     song = Song.new(name)
-    Song.all << [song]
+    song.save
   end
 
   def save
