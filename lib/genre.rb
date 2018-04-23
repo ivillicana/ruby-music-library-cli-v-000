@@ -8,6 +8,10 @@ class Genre
     @songs = []
   end
 
+  def songs
+    @songs
+  end
+  
   def self.all
     @@all
   end
