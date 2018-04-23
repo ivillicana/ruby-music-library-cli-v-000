@@ -24,4 +24,8 @@ class Artist
   def save
     Artist.all << self
   end
+
+  def songs
+    @songs
+  end
 end
