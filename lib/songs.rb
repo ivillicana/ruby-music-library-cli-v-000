@@ -4,7 +4,7 @@ class Song
   @@all = []
 
   def initialize(name, artist = nil, genre = nil)
-
+    @name = name
   end
 
   def self.all
