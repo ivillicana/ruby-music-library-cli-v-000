@@ -16,11 +16,11 @@ class Song
   end
 
   def self.create(name)
-    Song.new(name).save
+    song = Song.new(name)
+    song.save
   end
 
   def save
     @@all << self
-    @@all.flatten
   end
 end
