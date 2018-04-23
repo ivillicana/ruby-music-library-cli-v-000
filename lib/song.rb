@@ -1,13 +1,12 @@
 require 'pry'
 
 class Song
-  attr_accessor :name, :artist, :genre, :songs
+  attr_accessor :name, :artist, :genre
 
   @@all = []
 
   def initialize(name, artist = nil, genre = nil)
     @name = name
-    @songs = []
     if artist && genre
       @artist = artist
       @genre = genre
