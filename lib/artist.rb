@@ -21,6 +21,6 @@ class Artist
   end
 
   def save
-    Artist.all << self
+    Artist.all.push(self)
   end
 end
