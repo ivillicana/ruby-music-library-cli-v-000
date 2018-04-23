@@ -17,4 +17,8 @@ class MusicLibraryController
     option = gets.strip
     call if option != "exit"
   end
+
+  def list_songs
+    puts Songs.all
+  end
 end
