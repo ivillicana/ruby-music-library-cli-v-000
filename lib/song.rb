@@ -20,9 +20,11 @@ class Song
   def self.create(name)
     song = Song.new(name)
     song.save
+    binding.pry
   end
 
   def save
     @@all << self
   end
 end
+created_song = Song.create("Kaohsiung Christmas")
