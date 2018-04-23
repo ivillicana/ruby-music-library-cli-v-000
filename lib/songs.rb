@@ -20,6 +20,6 @@ class Song
   end
 
   def save
-    @@all << self
+    @@all.flatten << self
   end
 end
