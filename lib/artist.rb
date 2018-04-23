@@ -34,7 +34,7 @@ class Artist
     @songs << song if !@songs.include?(song)
   end
 
-  def genre
+  def genres
     @songs.collect do |song|
       song.genre
     end
