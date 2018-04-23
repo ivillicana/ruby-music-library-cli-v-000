@@ -38,4 +38,8 @@ class Song
     genre.songs << self  if !genre.songs.include?(self)
   end
 
+  def self.find_by_name(name)
+    @@all.detect
+  end
+
 end
